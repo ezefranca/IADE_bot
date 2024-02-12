@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45F5F3E22B76AACD00EE6DAE /* IADE_botApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F5F3E12B76AACD00EE6DAE /* IADE_botApp.swift */; };
+		45F5F3E42B76AACD00EE6DAE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F5F3E32B76AACD00EE6DAE /* ContentView.swift */; };
+		45F5F3E62B76AACE00EE6DAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45F5F3E52B76AACE00EE6DAE /* Assets.xcassets */; };
+		45F5F3EA2B76AACE00EE6DAE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45F5F3E92B76AACE00EE6DAE /* Preview Assets.xcassets */; };
+		45F5F3F62B76AC3500EE6DAE /* SwiftWhisper in Frameworks */ = {isa = PBXBuildFile; productRef = 45F5F3F52B76AC3500EE6DAE /* SwiftWhisper */; };
+		45F5F3F92B76ACBA00EE6DAE /* ggml-model-whisper-medium-q5_0.bin in Resources */ = {isa = PBXBuildFile; fileRef = 45F5F3F82B76ACBA00EE6DAE /* ggml-model-whisper-medium-q5_0.bin */; };
+		45F5F4012B785A8D00EE6DAE /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F5F4002B785A8D00EE6DAE /* RecordView.swift */; };
+		45F5F4042B785B1800EE6DAE /* SiriWaveView in Frameworks */ = {isa = PBXBuildFile; productRef = 45F5F4032B785B1800EE6DAE /* SiriWaveView */; };
+		45F5F4062B785BAD00EE6DAE /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F5F4052B785BAD00EE6DAE /* ViewModel.swift */; };
+		45F5F4082B785C0E00EE6DAE /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F5F4072B785C0D00EE6DAE /* AudioRecorder.swift */; };
+		45F5F40A2B785C2100EE6DAE /* FileSystemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F5F4092B785C2100EE6DAE /* FileSystemManager.swift */; };
+		45F5F40D2B785E1D00EE6DAE /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 45F5F40C2B785E1D00EE6DAE /* AudioKit */; };
+		45F5F40F2B785EA200EE6DAE /* AudioRecordState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F5F40E2B785EA200EE6DAE /* AudioRecordState.swift */; };
+		45F5F4132B785F9000EE6DAE /* ggml-model-whisper-base.bin in Resources */ = {isa = PBXBuildFile; fileRef = 45F5F4112B785F8F00EE6DAE /* ggml-model-whisper-base.bin */; };
+		45F5F4142B785F9000EE6DAE /* ggml-base-encoder.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = 45F5F4122B785F9000EE6DAE /* ggml-base-encoder.mlmodelc */; };
+		45F5F4162B7863BF00EE6DAE /* TTS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F5F4152B7863BF00EE6DAE /* TTS.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		45F5F3DE2B76AACD00EE6DAE /* IADE_bot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IADE_bot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45F5F3E12B76AACD00EE6DAE /* IADE_botApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IADE_botApp.swift; sourceTree = "<group>"; };
+		45F5F3E32B76AACD00EE6DAE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		45F5F3E52B76AACE00EE6DAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45F5F3E72B76AACE00EE6DAE /* IADE_bot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IADE_bot.entitlements; sourceTree = "<group>"; };
+		45F5F3E92B76AACE00EE6DAE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		45F5F3F82B76ACBA00EE6DAE /* ggml-model-whisper-medium-q5_0.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "ggml-model-whisper-medium-q5_0.bin"; sourceTree = "<group>"; };
+		45F5F4002B785A8D00EE6DAE /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
+		45F5F4052B785BAD00EE6DAE /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		45F5F4072B785C0D00EE6DAE /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		45F5F4092B785C2100EE6DAE /* FileSystemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystemManager.swift; sourceTree = "<group>"; };
+		45F5F40E2B785EA200EE6DAE /* AudioRecordState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecordState.swift; sourceTree = "<group>"; };
+		45F5F4102B785EEF00EE6DAE /* IADE-bot-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "IADE-bot-Info.plist"; sourceTree = SOURCE_ROOT; };
+		45F5F4112B785F8F00EE6DAE /* ggml-model-whisper-base.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "ggml-model-whisper-base.bin"; sourceTree = "<group>"; };
+		45F5F4122B785F9000EE6DAE /* ggml-base-encoder.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "ggml-base-encoder.mlmodelc"; sourceTree = "<group>"; };
+		45F5F4152B7863BF00EE6DAE /* TTS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTS.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45F5F3DB2B76AACD00EE6DAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45F5F40D2B785E1D00EE6DAE /* AudioKit in Frameworks */,
+				45F5F3F62B76AC3500EE6DAE /* SwiftWhisper in Frameworks */,
+				45F5F4042B785B1800EE6DAE /* SiriWaveView in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45F5F3D52B76AACD00EE6DAE = {
+			isa = PBXGroup;
+			children = (
+				45F5F3E02B76AACD00EE6DAE /* IADE_bot */,
+				45F5F3DF2B76AACD00EE6DAE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		45F5F3DF2B76AACD00EE6DAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45F5F3DE2B76AACD00EE6DAE /* IADE_bot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45F5F3E02B76AACD00EE6DAE /* IADE_bot */ = {
+			isa = PBXGroup;
+			children = (
+				45F5F4102B785EEF00EE6DAE /* IADE-bot-Info.plist */,
+				45F5F3F72B76ACA000EE6DAE /* Models */,
+				45F5F3E12B76AACD00EE6DAE /* IADE_botApp.swift */,
+				45F5F3E32B76AACD00EE6DAE /* ContentView.swift */,
+				45F5F4002B785A8D00EE6DAE /* RecordView.swift */,
+				45F5F4052B785BAD00EE6DAE /* ViewModel.swift */,
+				45F5F40E2B785EA200EE6DAE /* AudioRecordState.swift */,
+				45F5F4072B785C0D00EE6DAE /* AudioRecorder.swift */,
+				45F5F4092B785C2100EE6DAE /* FileSystemManager.swift */,
+				45F5F4152B7863BF00EE6DAE /* TTS.swift */,
+				45F5F3E52B76AACE00EE6DAE /* Assets.xcassets */,
+				45F5F3E72B76AACE00EE6DAE /* IADE_bot.entitlements */,
+				45F5F3E82B76AACE00EE6DAE /* Preview Content */,
+			);
+			path = IADE_bot;
+			sourceTree = "<group>";
+		};
+		45F5F3E82B76AACE00EE6DAE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				45F5F3E92B76AACE00EE6DAE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		45F5F3F72B76ACA000EE6DAE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				45F5F4122B785F9000EE6DAE /* ggml-base-encoder.mlmodelc */,
+				45F5F4112B785F8F00EE6DAE /* ggml-model-whisper-base.bin */,
+				45F5F3F82B76ACBA00EE6DAE /* ggml-model-whisper-medium-q5_0.bin */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45F5F3DD2B76AACD00EE6DAE /* IADE_bot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45F5F3ED2B76AACE00EE6DAE /* Build configuration list for PBXNativeTarget "IADE_bot" */;
+			buildPhases = (
+				45F5F3DA2B76AACD00EE6DAE /* Sources */,
+				45F5F3DB2B76AACD00EE6DAE /* Frameworks */,
+				45F5F3DC2B76AACD00EE6DAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IADE_bot;
+			packageProductDependencies = (
+				45F5F3F52B76AC3500EE6DAE /* SwiftWhisper */,
+				45F5F4032B785B1800EE6DAE /* SiriWaveView */,
+				45F5F40C2B785E1D00EE6DAE /* AudioKit */,
+			);
+			productName = IADE_bot;
+			productReference = 45F5F3DE2B76AACD00EE6DAE /* IADE_bot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45F5F3D62B76AACD00EE6DAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					45F5F3DD2B76AACD00EE6DAE = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 45F5F3D92B76AACD00EE6DAE /* Build configuration list for PBXProject "IADE_bot" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45F5F3D52B76AACD00EE6DAE;
+			packageReferences = (
+				45F5F3F02B76AAE100EE6DAE /* XCRemoteSwiftPackageReference "swift-tts" */,
+				45F5F3F42B76AC3500EE6DAE /* XCRemoteSwiftPackageReference "SwiftWhisper" */,
+				45F5F4022B785B1800EE6DAE /* XCRemoteSwiftPackageReference "SiriWaveView" */,
+				45F5F40B2B785E1D00EE6DAE /* XCRemoteSwiftPackageReference "AudioKit" */,
+			);
+			productRefGroup = 45F5F3DF2B76AACD00EE6DAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45F5F3DD2B76AACD00EE6DAE /* IADE_bot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45F5F3DC2B76AACD00EE6DAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45F5F3EA2B76AACE00EE6DAE /* Preview Assets.xcassets in Resources */,
+				45F5F3E62B76AACE00EE6DAE /* Assets.xcassets in Resources */,
+				45F5F4132B785F9000EE6DAE /* ggml-model-whisper-base.bin in Resources */,
+				45F5F3F92B76ACBA00EE6DAE /* ggml-model-whisper-medium-q5_0.bin in Resources */,
+				45F5F4142B785F9000EE6DAE /* ggml-base-encoder.mlmodelc in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45F5F3DA2B76AACD00EE6DAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45F5F3E42B76AACD00EE6DAE /* ContentView.swift in Sources */,
+				45F5F4012B785A8D00EE6DAE /* RecordView.swift in Sources */,
+				45F5F40A2B785C2100EE6DAE /* FileSystemManager.swift in Sources */,
+				45F5F4062B785BAD00EE6DAE /* ViewModel.swift in Sources */,
+				45F5F40F2B785EA200EE6DAE /* AudioRecordState.swift in Sources */,
+				45F5F3E22B76AACD00EE6DAE /* IADE_botApp.swift in Sources */,
+				45F5F4082B785C0E00EE6DAE /* AudioRecorder.swift in Sources */,
+				45F5F4162B7863BF00EE6DAE /* TTS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		45F5F3EB2B76AACE00EE6DAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		45F5F3EC2B76AACE00EE6DAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		45F5F3EE2B76AACE00EE6DAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IADE_bot/IADE_bot.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IADE_bot/Preview Content\"";
+				DEVELOPMENT_TEAM = 54JDK55DR5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "IADE-bot-Info.plist";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "To talk with the bot and have a nice interaction";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ezefranca.com.IADE-bot";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45F5F3EF2B76AACE00EE6DAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IADE_bot/IADE_bot.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IADE_bot/Preview Content\"";
+				DEVELOPMENT_TEAM = 54JDK55DR5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "IADE-bot-Info.plist";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "To talk with the bot and have a nice interaction";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ezefranca.com.IADE-bot";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45F5F3D92B76AACD00EE6DAE /* Build configuration list for PBXProject "IADE_bot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45F5F3EB2B76AACE00EE6DAE /* Debug */,
+				45F5F3EC2B76AACE00EE6DAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45F5F3ED2B76AACE00EE6DAE /* Build configuration list for PBXNativeTarget "IADE_bot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45F5F3EE2B76AACE00EE6DAE /* Debug */,
+				45F5F3EF2B76AACE00EE6DAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		45F5F3F02B76AAE100EE6DAE /* XCRemoteSwiftPackageReference "swift-tts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/renaudjenny/swift-tts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.2;
+			};
+		};
+		45F5F3F42B76AC3500EE6DAE /* XCRemoteSwiftPackageReference "SwiftWhisper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exPHAT/SwiftWhisper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+		45F5F4022B785B1800EE6DAE /* XCRemoteSwiftPackageReference "SiriWaveView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/SiriWaveView";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		45F5F40B2B785E1D00EE6DAE /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		45F5F3F52B76AC3500EE6DAE /* SwiftWhisper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45F5F3F42B76AC3500EE6DAE /* XCRemoteSwiftPackageReference "SwiftWhisper" */;
+			productName = SwiftWhisper;
+		};
+		45F5F4032B785B1800EE6DAE /* SiriWaveView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45F5F4022B785B1800EE6DAE /* XCRemoteSwiftPackageReference "SiriWaveView" */;
+			productName = SiriWaveView;
+		};
+		45F5F40C2B785E1D00EE6DAE /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45F5F40B2B785E1D00EE6DAE /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 45F5F3D62B76AACD00EE6DAE /* Project object */;
+}
